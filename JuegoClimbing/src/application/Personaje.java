@@ -10,8 +10,8 @@ import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 public class Personaje {
-	public static double ballSpeed = 10;
-	int a=225,b=700, radio=15;
+	public static double ballSpeed = 20;
+	int a=225,b=700, radio=5;
 	public void personaje(Stage Stage2){
 		Pane root = new Pane();
 		Scene scene = new Scene(root, 900, 800);
@@ -41,7 +41,7 @@ public class Personaje {
 			if(c1.getTranslateY() < 500 || c1.getTranslateY() > 700) {
 			ballSpeed *= -1;
 			} 
-			c1.setTranslateY(c1.getTranslateY() + ballSpeed*3);
+			c1.setTranslateY(c1.getTranslateY() + ballSpeed);
 		}
 	};
 	animationTimer.start();
