@@ -19,7 +19,7 @@ public class Main extends Application {
 			AnchorPane root = new AnchorPane();
 			Scene scene = new Scene(root,1000,800);
 			 
-			Image i1=new Image("file:///C:/Users/dennys/workspace/JuegoClimbing/src/application/1.png");
+			Image i1=new Image("file:///C:/Users/dennys/Desktop/Climbing/JuegoClimbing/src/application/1.png");
 			ImageView vi=new ImageView();
 			vi.setImage(i1);
 			vi.setFitWidth(1010);
@@ -31,7 +31,6 @@ public class Main extends Application {
 			Ingresar.setLayoutY(350);
 			Ingresar.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>()
 					{
-
 						@Override
 						public void handle(MouseEvent arg0) {
 							// TODO Auto-generated method stub
@@ -45,7 +44,6 @@ public class Main extends Application {
 			Informacion.setLayoutY(400);
 			Informacion.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>()
 					{
-
 						@Override
 						public void handle(MouseEvent arg0) {
 							// TODO Auto-generated method stub
@@ -66,7 +64,6 @@ public class Main extends Application {
 						}
 					}
 					);
-			
 			root.getChildren().addAll(vi,Ingresar,Informacion,Salir);
 			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
