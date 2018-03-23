@@ -18,7 +18,6 @@ public class Main extends Application {
 		
 			AnchorPane root = new AnchorPane();
 			Scene scene = new Scene(root,1000,800);
-			 
 			Image i1=new Image("file:///C:/Users/dennys/Desktop/Climbing/JuegoClimbing/src/application/1.png");
 			ImageView vi=new ImageView();
 			vi.setImage(i1);
@@ -65,7 +64,7 @@ public class Main extends Application {
 					}
 					);
 			root.getChildren().addAll(vi,Ingresar,Informacion,Salir);
-			primaryStage.setResizable(false);
+			//primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
 			primaryStage.show();	
 	}
